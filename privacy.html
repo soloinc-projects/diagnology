@@ -12,15 +12,15 @@
 <body>
     <header class="site-header">
         <nav class="nav-bar">
-            <a href="/" class="logo-link" aria-label="Diagnology home">
+            <a href="./" class="logo-link" aria-label="Diagnology home">
                 <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill="currentColor" fill-rule="evenodd" d="M3,3 H12 A9,9 0 0 1 12,21 H3 Z M7,7 H12 A5,5 0 0 1 12,17 H7 Z"/>
                 </svg>
                 <span class="logo-text">Diagnology</span>
             </a>
             <div class="nav-links">
-                <a href="/privacy" class="nav-link">Privacy</a>
-                <a href="/support" class="nav-link">Support</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+                <a href="support.html" class="nav-link">Support</a>
             </div>
         </nav>
     </header>
@@ -28,80 +28,53 @@
     <main>
         <article class="legal-document">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: October 16, 2026</p>
+            <p class="last-updated">Last updated: October 18, 2026</p>
+
+            <h2>Who we are</h2>
+            <p>Diagnology is published by 8086 LLC. Questions about this policy or your data: <a href="mailto:support@8086.llc">support@8086.llc</a>.</p>
 
             <h2>Overview</h2>
-            <p>
-                Diagnology is an offline-first app. <strong>We collect no personal data.</strong> The app runs entirely on your device. There are no servers to send data to, no analytics SDKs to track behavior, and no login or account system that would require personal information.
-            </p>
+            <p>Diagnology works offline. It has no account, no login, no server and no analytics. We collect no personal data: nothing you type or save in the app is sent to us or to anyone else.</p>
 
-            <h2>What we do not collect</h2>
-            <p>Diagnology does not collect, store, or transmit any of the following:</p>
+            <h2>What the app does not collect</h2>
             <ul>
-                <li><strong>Patient data:</strong> The app helps you look up diagnosis codes, but it does not see, store, or send any actual patient information.</li>
-                <li><strong>Personal identification:</strong> No name, email, phone number, or account credentials are requested or stored.</li>
-                <li><strong>Search history:</strong> The codes you look up are not logged to a server or sent anywhere.</li>
-                <li><strong>Device identifiers:</strong> No IDFA (iOS), Android Advertising ID, or other unique device identifiers are collected.</li>
-                <li><strong>Analytics:</strong> No third-party analytics SDKs (Google Analytics, Firebase, Mixpanel, etc.) are embedded in the app.</li>
-                <li><strong>Crash reports:</strong> Exception logs are not automatically sent to external services.</li>
-                <li><strong>Location data:</strong> Your location is not requested or used.</li>
+                <li><strong>Patient data:</strong> the app looks up diagnosis codes; it never asks for, stores or sends patient information.</li>
+                <li><strong>Personal details:</strong> no name, email, phone number or account.</li>
+                <li><strong>Search history:</strong> your searches stay in the app and are not sent anywhere.</li>
+                <li><strong>Identifiers:</strong> no advertising ID or other device identifier is read.</li>
+                <li><strong>Analytics and crash reports:</strong> no analytics or crash-reporting library is in the app, and nothing is sent automatically.</li>
+                <li><strong>Location, contacts, photos:</strong> never requested.</li>
             </ul>
 
-            <h2>How favorites are stored</h2>
-            <p>
-                When you save a code as a favorite with a personal note, that data is stored on your device only, in the app's local database. It is never uploaded to any server. If you uninstall the app, your favorites are deleted along with it. If you upgrade to a future paid tier (Phase 2), the app will migrate your local favorites safely to the upgraded version on the same device.
-            </p>
+            <h2>What stays on your device</h2>
+            <p>The favorites you save, the notes you write on them and your display settings are kept in the app's own storage on your device. They are included in your device's own backup if you use one (iCloud or Finder/iTunes backup on iPhone and iPad, Google's device backup on Android), under your account with Apple or Google, and they come back if you restore that backup. We cannot see them. Deleting the app deletes them from the device; to remove them from a backup, delete that backup in your device's settings.</p>
 
-            <h2>Offline operation</h2>
-            <p>
-                Diagnology is designed to run offline. The ICD-10-CM code table is bundled with the app when you download it. The app does not require an internet connection to look up codes. If you have internet enabled on your device, the app does not use it—the bundled table is complete and sufficient.
-            </p>
+            <h2>Network</h2>
+            <p>The ICD-10-CM code table ships inside the app. The app makes no network requests; on Android it does not hold the internet permission. A new code table arrives only as a normal app update from the App Store or Google Play.</p>
 
-            <h2>Code table updates</h2>
-            <p>
-                The app's code table is updated annually to match the US CMS fiscal-year release. When a new version of Diagnology ships with an updated code table, you download and install it normally through the App Store or Google Play. The code table is not updated over-the-air or automatically. You always know when the table is refreshed because you actively update the app.
-            </p>
+            <h2>Libraries in the app</h2>
+            <p>On iPhone and iPad the app uses only Apple's frameworks. On Android it uses Google's AndroidX libraries and protobuf-lite. None of them collects or sends data in Diagnology.</p>
 
-            <h2>Third-party libraries</h2>
-            <p>
-                Diagnology is built with no external dependencies beyond the platform's own standard library (Foundation on iOS, Android Framework on Android). There are no third-party SDKs bundled in the app.
-            </p>
+            <h2>Store privacy answers</h2>
+            <p>The App Store privacy label we submit declares Data Not Collected, and our Google Play Data safety form declares that no data is collected or shared. Both match this page.</p>
 
-            <h2>Apple App Privacy Label</h2>
-            <p>
-                The App Store privacy label for Diagnology states: <strong>Data Not Collected.</strong> Apple's label-generating system confirms that the app has no code sections marked as data collection, and our submitted privacy information declares no personal data categories.
-            </p>
-
-            <h2>Google Play Data Safety</h2>
-            <p>
-                The Google Play Data Safety form for Diagnology answers "No" or "Not applicable" to all data collection questions. The app does not collect personal or sensitive information.
-            </p>
-
-            <h2>Contacting us about privacy</h2>
-            <p>
-                If you have questions about this privacy policy or Diagnology's data practices, please visit our <a href="/support">support page</a> for contact information.
-            </p>
+            <h2>Children</h2>
+            <p>Diagnology is a reference for coding professionals and is not directed to children. It collects no data from anyone.</p>
 
             <h2>Changes to this policy</h2>
-            <p>
-                We may update this privacy policy from time to time. Changes will be posted here with an updated "last modified" date. Continued use of the app after a policy change constitutes acceptance of the new policy.
-            </p>
-
-            <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); color: var(--color-text-secondary); font-size: 0.9rem;">
-                <strong>Summary in one sentence:</strong> Diagnology never collects your personal data, never sends your lookups anywhere, and runs completely offline on your device.
-            </p>
+            <p>If the app ever starts handling data differently, this page will change first, with a new date at the top.</p>
         </article>
     </main>
 
     <footer class="site-footer">
         <nav class="footer-nav">
-            <a href="/" class="footer-link">Home</a>
-            <a href="/privacy" class="footer-link">Privacy</a>
-            <a href="/support" class="footer-link">Support</a>
-            <a href="/terms" class="footer-link">Terms</a>
+            <a href="./" class="footer-link">Home</a>
+            <a href="privacy.html" class="footer-link">Privacy</a>
+            <a href="support.html" class="footer-link">Support</a>
+            <a href="terms.html" class="footer-link">Terms</a>
         </nav>
         <p class="footer-copyright">
-            © 2026 Diagnology. All rights reserved.
+            © 2026 8086 LLC. Diagnology is published by 8086 LLC.
         </p>
     </footer>
 
