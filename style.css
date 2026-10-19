@@ -466,3 +466,18 @@ main {
     padding-right: var(--space-md);
   }
 }
+
+/* Three screenshots of the built app in the hero, shot by the App Store screenshot test. */
+.screenshot-row {
+    display: flex;
+    gap: var(--space-md, 16px);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.screenshot-row img {
+    width: 30%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
